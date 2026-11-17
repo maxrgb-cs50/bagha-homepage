@@ -36,6 +36,44 @@
     reveals.forEach((el) => el.classList.add('is-visible'));
   }
 
+  /* Digital timeline: connector fills with scroll, steps activate as the reading line passes */
+  const flow = document.querySelector('[data-flow]');
+  if (flow) {
+    const steps = [...flow.querySelectorAll('.flow-step')];
+    const nodes = steps.map((s) => s.querySelector('.flow-node'));
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+    let ticking = false;
+    const update = () => {
+      ticking = false;
+      const line = window.innerHeight * 0.6;
+      steps.forEach((step, i) => {
+        const n = nodes[i].getBoundingClientRect();
+        step.classList.toggle('is-active', n.top + n.height / 2 <= line);
+        const start = n.bottom + 8;
+        const end = step.getBoundingClientRect().bottom - 8;
+        const seg = Math.min(1, Math.max(0, (line - start) / Math.max(1, end - start)));
+        step.style.setProperty('--seg', seg.toFixed(3));
+      });
+    };
+    const onScroll = () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } };
+    const showAll = () => steps.forEach((s) => { s.classList.add('is-active'); s.style.setProperty('--seg', '1'); });
+    if (reduce.matches || !('IntersectionObserver' in window)) {
+      showAll();
+    } else {
+      new IntersectionObserver(([entry]) => {
+        if (entry.isIntersecting) {
+          window.addEventListener('scroll', onScroll, { passive: true });
+          window.addEventListener('resize', onScroll);
+          update();
+        } else {
+          window.removeEventListener('scroll', onScroll);
+          window.removeEventListener('resize', onScroll);
+          update();
+        }
+      }).observe(flow);
+    }
+  }
+
   /* Active section in nav */
   const navLinks = [...document.querySelectorAll('.main-nav a')];
   const sections = navLinks.map((a) => document.querySelector(a.getAttribute('href'))).filter(Boolean);
