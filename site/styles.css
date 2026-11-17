@@ -247,25 +247,11 @@ input, textarea { caret-color: var(--ink-900); }
 .hero-media { position: relative; }
 .hero-image { aspect-ratio: 4 / 5; overflow: hidden; background: var(--paper-300); }
 .hero-image img { width: 100%; height: 100%; object-fit: cover; object-position: 27% 50%; }
-.hero-chip {
-  position: absolute; left: -32px; bottom: 40px;
-  display: flex; align-items: center; gap: 14px;
-  padding: 12px 22px 12px 12px;
-  background: var(--surface-card); border: 1px solid var(--border-hairline);
-  border-radius: var(--radius-2); box-shadow: var(--shadow-2);
-}
-.hero-chip img { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; object-position: 50% 20%; }
-.hero-chip > span { display: flex; flex-direction: column; line-height: 1.3; }
-.hero-chip strong { font-family: var(--font-display); font-size: 20px; font-weight: 500; color: var(--text-strong); }
-.hero-chip span span { font-size: 13px; color: var(--text-muted); }
-.hero-chip .hero-chip-reach { display: flex; align-items: flex-start; gap: 6px; margin-top: 2px; }
-.hero-chip-reach .icon { flex: none; width: 15px; height: 15px; margin-top: 1px; color: var(--sand-500); }
 
 /* Hero entrance: one-time, marketing context → may run a little longer */
 .js .hero-in { animation: rise 640ms var(--ease-out) both; animation-delay: var(--d, 0ms); }
 .js .hero-image { animation: unveil 1000ms var(--ease-in-out) 80ms both; }
 .js .hero-image img { animation: settle 1400ms var(--ease-out) 80ms both; }
-.js .hero-chip { animation: rise 600ms var(--ease-out) 720ms both; }
 
 @keyframes rise { from { opacity: 0; transform: translateY(12px); } }
 @keyframes unveil { from { clip-path: inset(100% 0 0 0); } to { clip-path: inset(0 0 0 0); } }
@@ -651,11 +637,10 @@ input, textarea { caret-color: var(--ink-900); }
   .main-nav ul { gap: 24px; }
   .header-inner { gap: 28px; }
   .brand-word { display: none; }
-  .hero-chip { left: 16px; bottom: 16px; }
 }
 
 @media (max-width: 900px) {
-  .main-nav, .cta-long, .hero-chip { display: none; }
+  .main-nav, .cta-long { display: none; }
   .header-inner { gap: 16px; }
   .cta-short { display: inline; }
   .brand-word { display: block; }
@@ -682,9 +667,6 @@ input, textarea { caret-color: var(--ink-900); }
 @media (max-width: 600px) {
   body { font-size: 16px; }
   .hero-actions .btn { flex: 1 1 100%; }
-  .hero-chip { padding: 8px 16px 8px 8px; }
-  .hero-chip img { width: 40px; height: 40px; }
-  .hero-chip strong { font-size: 17px; }
   .service-card { padding: 24px; }
   .tablist { gap: 20px; }
   .tablist > * { font-size: 15px; letter-spacing: 0; }
@@ -717,7 +699,7 @@ input, textarea { caret-color: var(--ink-900); }
 /* ---------- Reduced motion: keep fades, drop movement ---------- */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .js .hero-in, .js .hero-chip { animation-name: fade; }
+  .js .hero-in { animation-name: fade; }
   .js .hero-image, .js .hero-image img { animation: none; }
   .js .reveal { transform: none; transition: opacity 400ms ease; }
   .tabpanel[data-entering], .field[data-invalid] .field-error, .form-result:not([hidden]) { animation-name: fade; }
