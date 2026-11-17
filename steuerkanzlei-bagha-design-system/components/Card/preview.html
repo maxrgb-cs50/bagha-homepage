@@ -1,0 +1,11 @@
+<!-- @dsCard group="Core" height=200 -->
+<!doctype html><html lang="de"><head><meta charset="utf-8"><style>body{margin:0;padding:24px;background:var(--bg-page)}.r{display:flex;flex-wrap:wrap;gap:12px;align-items:center}.c{display:flex;flex-direction:column;gap:16px}</style></head><body><div id="root"></div><script>
+const h=React.createElement, NS=window.SteuerkanzleiBaghaDesignSystem_3f9615;
+const {Card}=NS;
+const t=s=>h('h3',{style:{fontSize:'var(--fs-h3)',lineHeight:'var(--lh-h3)'}},s), p=s=>h('p',{style:{fontSize:'var(--fs-small)',color:'var(--text-muted)',marginTop:8}},s);
+function App(){return h('div',{style:{display:'grid',gridTemplateColumns:'repeat(3,1fr)',gap:16}},
+ h(Card,{interactive:true,padding:24},t('Outline'),p('Weiß, Haarlinie, hebt sich beim Hover.')),
+ h(Card,{variant:'muted',padding:24},t('Muted'),p('Papierfläche ohne Rahmen.')),
+ h(Card,{variant:'inverse',padding:24},h('h3',{style:{fontSize:'var(--fs-h3)',color:'var(--text-inverse)'}},'Inverse'),h('p',{style:{fontSize:'var(--fs-small)',color:'var(--text-inverse-muted)',marginTop:8}},'Navy, für einen dunklen Akzent.')));}
+ReactDOM.createRoot(document.getElementById('root')).render(h(App));
+</script></body></html>

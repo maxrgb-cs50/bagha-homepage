@@ -1,0 +1,56 @@
+{
+  "v": 3,
+  "assetGroups": {
+    "Other": {
+      "files": {},
+      "name": "Other",
+      "order": []
+    },
+    "notes": {
+      "files": {},
+      "name": "notes",
+      "order": []
+    },
+    "photos": {
+      "files": {},
+      "name": "photos",
+      "order": []
+    }
+  },
+  "blobs": {},
+  "createdOnFiles": {
+    "at": "2026-11-15T18:47:58.345Z",
+    "v": 1
+  },
+  "docs": {
+    "readme": "project/README.md",
+    "sections": [
+      "project/ui_kits/website/README.md"
+    ]
+  },
+  "groups": [
+    "Other",
+    "notes",
+    "photos"
+  ],
+  "layout": "files",
+  "libraries": [
+    {
+      "name": "react",
+      "version": "18"
+    },
+    {
+      "name": "react-dom",
+      "version": "18"
+    }
+  ],
+  "namespace": "SteuerkanzleiBaghaDesignSystem_3f9615",
+  "sections": {},
+  "title": "Steuerkanzlei Bagha Design System",
+  "lastChange": {
+    "by": "Maximilian Walther",
+    "at": "2026-11-15T19:10:00Z",
+    "via": "Claude",
+    "note": "Finished setting up: tokens.json, component bundle and previews, cover; added Leistungen & Über mich"
+  }
+}

@@ -1,0 +1,121 @@
+/* Steuerkanzlei Bagha Design System — generated from tokens.json */
+:root, [data-theme="light"] {
+  --ink-900: #141414;
+  --ink-800: #222221;
+  --ink-700: #3a3936;
+  --ink-600: #5a5853;
+  --ink-500: #7a776f;
+  --ink-400: #a19d94;
+  --ink-300: #c8c4bb;
+  --ink-200: #e2ded6;
+  --ink-100: #eeebe5;
+  --paper-50: #fcfbf9;
+  --paper-100: #f7f5f1;
+  --paper-200: #f0ece5;
+  --paper-300: #e7e1d7;
+  --navy-900: #141b27;
+  --navy-800: #1c2636;
+  --navy-700: #26334a;
+  --navy-600: #34445f;
+  --navy-500: #4a5c7b;
+  --navy-200: #c9d0dc;
+  --navy-100: #e6e9ef;
+  --sand-600: #8c7556;
+  --sand-500: #a88f6c;
+  --sand-400: #c2ac8a;
+  --sand-200: #e4d8c5;
+  --sand-100: #f2ebdf;
+  --green-700: #2e5e47;
+  --green-100: #e3ede7;
+  --amber-700: #8a5a1c;
+  --amber-100: #f5ead8;
+  --red-700: #9a3427;
+  --red-100: #f6e3df;
+  --bg-page: var(--paper-100);
+  --bg-elevated: var(--paper-50);
+  --bg-subtle: var(--paper-200);
+  --bg-inverse: var(--navy-900);
+  --bg-ink: var(--ink-900);
+  --surface-card: #ffffff;
+  --surface-muted: var(--paper-200);
+  --surface-accent: var(--sand-100);
+  --text-strong: var(--ink-900);
+  --text-body: var(--ink-800);
+  --text-muted: var(--ink-600);
+  --text-subtle: var(--ink-500);
+  --text-inverse: var(--paper-50);
+  --text-inverse-muted: var(--navy-200);
+  --text-accent: var(--sand-600);
+  --text-link: var(--navy-700);
+  --text-link-hover: var(--ink-900);
+  --border-hairline: var(--ink-200);
+  --border-default: var(--ink-300);
+  --border-strong: var(--ink-900);
+  --border-accent: var(--sand-400);
+  --border-inverse: rgba(247,245,241,.18);
+  --action-primary: var(--ink-900);
+  --action-primary-hover: var(--navy-800);
+  --action-primary-press: var(--navy-900);
+  --action-on-primary: var(--paper-50);
+  --action-secondary-hover: var(--paper-200);
+  --focus-ring: var(--sand-500);
+  --status-success: var(--green-700);
+  --status-success-bg: var(--green-100);
+  --status-warning: var(--amber-700);
+  --status-warning-bg: var(--amber-100);
+  --status-error: var(--red-700);
+  --status-error-bg: var(--red-100);
+  --status-info: var(--navy-700);
+  --status-info-bg: var(--navy-100);
+  --shadow-0: none;
+  --shadow-1: 0 1px 2px rgba(20,20,20,.05);
+  --shadow-2: 0 1px 2px rgba(20,20,20,.04), 0 8px 24px -8px rgba(20,27,39,.12);
+  --shadow-3: 0 2px 4px rgba(20,20,20,.05), 0 24px 48px -16px rgba(20,27,39,.22);
+}
+:root {
+  --space-0: 0;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+  --space-10: 128px;
+  --radius-0: 0;
+  --radius-1: 2px;
+  --radius-2: 4px;
+  --radius-pill: 999px;
+  --container-max: 1200px;
+  --container-text: 680px;
+  --gutter: 24px;
+  --header-h: 80px;
+  --rule-accent-w: 40px;
+  --border-w: 1px;
+  --font-display: 'Cormorant Garamond', 'EB Garamond', Garamond, 'Times New Roman', serif;
+  --font-body: 'Hanken Grotesk', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+}
+.display-xl { font-family: var(--font-display); font-size: 72px; line-height: 1.02; font-weight: 500; }
+.display-l { font-family: var(--font-display); font-size: 56px; line-height: 1.05; font-weight: 500; }
+.display-l-italic { font-family: var(--font-display); font-size: 56px; line-height: 1.05; font-weight: 400; font-style: italic; }
+.h1 { font-family: var(--font-display); font-size: 44px; line-height: 1.1; font-weight: 500; }
+.h2 { font-family: var(--font-display); font-size: 34px; line-height: 1.15; font-weight: 500; }
+.h3 { font-family: var(--font-display); font-size: 26px; line-height: 1.2; font-weight: 500; }
+.h4 { font-family: var(--font-display); font-size: 21px; line-height: 1.3; font-weight: 500; }
+.lead { font-family: var(--font-body); font-size: 20px; line-height: 1.55; font-weight: 400; }
+.body { font-family: var(--font-body); font-size: 17px; line-height: 1.6; font-weight: 400; }
+.small { font-family: var(--font-body); font-size: 15px; line-height: 1.5; font-weight: 400; }
+.caption { font-family: var(--font-body); font-size: 13px; line-height: 1.45; font-weight: 400; }
+.eyebrow { font-family: var(--font-body); font-size: 12px; line-height: 1.2; font-weight: 600; letter-spacing: 0.18em; }
+.wordmark { font-family: var(--font-body); font-size: 15px; line-height: 1.2; font-weight: 500; letter-spacing: 0.08em; }
+@font-face { font-family: 'Cormorant Garamond'; src: url('fonts/CormorantGaramond-400-latin.woff2') format('woff2'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Cormorant Garamond'; src: url('fonts/CormorantGaramond-400i-latin.woff2') format('woff2'); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Cormorant Garamond'; src: url('fonts/CormorantGaramond-500-latin.woff2') format('woff2'); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Cormorant Garamond'; src: url('fonts/CormorantGaramond-500i-latin.woff2') format('woff2'); font-weight: 500; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Cormorant Garamond'; src: url('fonts/CormorantGaramond-600-latin.woff2') format('woff2'); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Hanken Grotesk'; src: url('fonts/HankenGrotesk-400-latin.woff2') format('woff2'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Hanken Grotesk'; src: url('fonts/HankenGrotesk-500-latin.woff2') format('woff2'); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Hanken Grotesk'; src: url('fonts/HankenGrotesk-600-latin.woff2') format('woff2'); font-weight: 600; font-style: normal; font-display: swap; }

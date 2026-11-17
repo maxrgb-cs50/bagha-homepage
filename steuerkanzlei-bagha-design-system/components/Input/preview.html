@@ -1,0 +1,7 @@
+<!-- @dsCard group="Forms" height=120 -->
+<!doctype html><html lang="de"><head><meta charset="utf-8"><style>body{margin:0;padding:24px;background:var(--bg-page)}.r{display:flex;flex-wrap:wrap;gap:12px;align-items:center}.c{display:flex;flex-direction:column;gap:16px}</style></head><body><div id="root"></div><script>
+const h=React.createElement, NS=window.SteuerkanzleiBaghaDesignSystem_3f9615;
+const {Input}=NS;
+function App(){return h('div',{style:{display:'grid',gridTemplateColumns:'1fr 1fr 1fr',gap:16}},h(Input,{label:'Name',required:true,placeholder:'Vor- und Nachname'}),h(Input,{label:'E-Mail',type:'email',defaultValue:'mail@',error:'Bitte gültige E-Mail angeben'}),h(Input,{label:'Telefon',disabled:true,placeholder:'optional',hint:'Für Rückfragen'}));}
+ReactDOM.createRoot(document.getElementById('root')).render(h(App));
+</script></body></html>

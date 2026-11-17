@@ -1,0 +1,10 @@
+<!-- @dsCard group="Core" height=260 -->
+<!doctype html><html lang="de"><head><meta charset="utf-8"><style>body{margin:0;padding:24px;background:var(--bg-page)}.r{display:flex;flex-wrap:wrap;gap:12px;align-items:center}.c{display:flex;flex-direction:column;gap:16px}</style></head><body><div id="root"></div><script>
+const h=React.createElement, NS=window.SteuerkanzleiBaghaDesignSystem_3f9615;
+const {ServiceCard}=NS;
+function App(){return h('div',{style:{display:'grid',gridTemplateColumns:'repeat(3,minmax(0,1fr))',gap:16}},
+ h(ServiceCard,{icon:'landmark',title:'Jahresabschlüsse',description:'Bilanz oder Einnahmen-Überschuss-Rechnung im Rahmen der laufenden Betreuung.'}),
+ h(ServiceCard,{icon:'git-fork',title:'Nachfolgeberatung',description:'Steueroptimierte Vermögensübertragung und Unternehmensnachfolge.'}),
+ h(ServiceCard,{icon:'sprout',title:'Existenzgründung',description:'Rechtsformwahl, steuerliche Erfassung und Einrichtung der Buchhaltung mit DATEV Unternehmen online.',linkLabel:'Anfragen'}));}
+ReactDOM.createRoot(document.getElementById('root')).render(h(App));
+</script></body></html>
