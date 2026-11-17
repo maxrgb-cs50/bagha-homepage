@@ -655,7 +655,7 @@ input, textarea { caret-color: var(--ink-900); }
 }
 
 @media (max-width: 900px) {
-  .main-nav, .cta-long { display: none; }
+  .main-nav, .cta-long, .hero-chip { display: none; }
   .header-inner { gap: 16px; }
   .cta-short { display: inline; }
   .brand-word { display: block; }
